@@ -1,0 +1,36 @@
+.home-testimonials {
+  position: relative;
+}
+
+.home-testimonials .ui-quote {
+  position: absolute;
+  top: -2.5rem;
+  left: 5%;
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+}
+
+.home-testimonials__heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-testimonials__heading span:last-child {
+  align-self: flex-end;
+}
+
+.home-testimonials__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4.5rem;
+}
+
+.home-testimonials__quote {
+  margin-bottom: 1rem;
+}
+
+.home-testimonials__author {
+  font-style: italic;
+}

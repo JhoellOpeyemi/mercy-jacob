@@ -1,0 +1,7 @@
+.home-brands__list {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}

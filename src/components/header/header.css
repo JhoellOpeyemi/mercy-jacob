@@ -1,0 +1,57 @@
+.header {
+  position: sticky;
+  top: 1.5rem;
+  z-index: 3;
+}
+
+.header.active .header__logo,
+.header.active .header__time {
+  color: var(--color-bg);
+}
+
+.header.active .header__menu-line {
+  background-color: var(--color-bg);
+}
+
+/* hide message icon when nav is active */
+.header.active + .home .ui-message {
+  display: none;
+}
+
+.header__logo,
+.header__time,
+.header__menu {
+  z-index: 4;
+}
+
+.header__logo {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.header__time {
+  opacity: 0.7;
+}
+
+.header__menu {
+  width: 2rem;
+  height: 0.875rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+}
+
+.header__menu-line {
+  display: block;
+  width: 100%;
+  height: 0.125rem;
+  background-color: var(--color-dark-text);
+  border-radius: 0.1rem;
+}
+
+.header__menu-line:first-child {
+  width: 60%;
+  align-self: flex-end;
+}

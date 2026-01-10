@@ -1,0 +1,32 @@
+.home-about__heading {
+  display: none;
+}
+
+.home-about__content {
+  margin-bottom: 2rem;
+}
+
+.home-about__numbers-container {
+  margin: 2.5rem auto;
+  padding: 0 0.5rem;
+  gap: 1.5rem;
+  justify-content: space-between;
+  width: min(100%, 28rem);
+}
+
+.home-about__number {
+  align-items: center;
+  text-align: center;
+  line-height: 1.3;
+  color: var(--color-dark-text);
+}
+
+.home-about__number span:first-child {
+  font-size: var(--font-md-text);
+  font-weight: 500;
+}
+
+.home-about__number span:last-child {
+  font-size: var(--font-sm-text);
+  font-weight: 300;
+}

@@ -1,0 +1,9 @@
+.ui-button {
+  background-color: var(--color-dark-bg);
+  color: var(--color-bg);
+  text-transform: capitalize;
+  padding: 0.75rem 1rem;
+  font-size: var(--font-button);
+  border: 0;
+  width: max-content;
+}

@@ -1,0 +1,29 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-dark-text);
+}
+
+p {
+  font-size: var(--font-text);
+  color: var(--color-text);
+}
+
+button {
+  cursor: pointer;
+  user-select: none;
+}
+
+span {
+  display: inline-block;
+}
