@@ -5,8 +5,8 @@ import Header from "@/components/header/Header";
 import SmoothScroll from "./components/utils/SmoothScroll";
 
 // styles import
-import "@/styles/variables.css";
 import "@/styles/resets.css";
+import "@/styles/variables.css";
 import "@/styles/globals.css";
 import "@/styles/helpers.css";
 

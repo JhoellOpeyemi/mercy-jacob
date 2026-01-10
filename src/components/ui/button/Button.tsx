@@ -3,12 +3,13 @@ import "./button.css";
 
 interface ButtonProps {
   label: string;
+  type?: "button" | "reset" | "submit" | undefined;
   onClickFunc?: () => void;
 }
 
-const Button = ({ label, onClickFunc }: ButtonProps) => {
+const Button = ({ label, type, onClickFunc }: ButtonProps) => {
   return (
-    <button className="ui-button inter" onClick={onClickFunc}>
+    <button type={type} className="ui-button inter" onClick={onClickFunc}>
       {label}
     </button>
   );

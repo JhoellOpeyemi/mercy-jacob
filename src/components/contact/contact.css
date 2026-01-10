@@ -1,0 +1,14 @@
+.contact__intro {
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact__heading {
+  font-size: var(--font-md-text);
+  font-weight: 700;
+}
+
+.contact__email-link {
+  font-weight: 600;
+  color: var(--color-dark-text);
+}

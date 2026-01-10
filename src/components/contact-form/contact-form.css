@@ -1,0 +1,32 @@
+.contact-form {
+  width: min(100%, 31.25rem);
+  margin: 0 auto;
+}
+
+.contact-form__input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form__input-container {
+  gap: 0.5rem;
+}
+
+.contact-form__input-container input,
+.contact-form__input-container textarea {
+  padding: 0.5rem;
+  font-size: var(--font-text);
+  background-color: var(--color-input-bg);
+  border: 1px solid var(--color-light);
+}
+
+.contact-form__input-container label {
+  width: max-content;
+  color: var(--color-dark-text);
+}
+
+.contact-form button {
+  margin: 2rem 0 0;
+}

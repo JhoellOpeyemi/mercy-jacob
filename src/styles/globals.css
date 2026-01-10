@@ -19,11 +19,26 @@ p {
   color: var(--color-text);
 }
 
-button {
+button,
+label {
   cursor: pointer;
   user-select: none;
 }
 
 span {
   display: inline-block;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-light);
+  border-radius: 4px;
 }

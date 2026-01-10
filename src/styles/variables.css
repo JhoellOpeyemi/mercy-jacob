@@ -5,6 +5,7 @@
   --color-dark-text: #222;
   --color-light: #888;
   --color-lighter: #ccc;
+  --color-input-bg: #dfdfdf;
 
   /* lowest values */
   --font-sm-text: 0.875rem;
