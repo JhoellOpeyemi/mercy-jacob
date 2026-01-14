@@ -14,14 +14,15 @@ interface ButtonProps {
 const Button = ({ label, type, onClickFunc, link, path }: ButtonProps) => {
   return (
     <>
-        {!link ? (
-            <button type={type} className="ui-button inter" onClick={onClickFunc}>
-            {label}
-            </button>
-            ): (
-                <Link to={path} className="ui-button inter">{label}</Link>
-            )
-        }
+      {!link ? (
+        <button type={type} className="ui-button inter" onClick={onClickFunc}>
+          {label}
+        </button>
+      ) : (
+        <Link to={path!} className="ui-button inter">
+          {label}
+        </Link>
+      )}
     </>
   );
 };
