@@ -1,5 +1,7 @@
 // components import
 import Button from "@/components/ui/button/Button";
+import Stat from "@/components/utils/stat/Stat";
+
 // styled import
 import "./about.css";
 
@@ -15,24 +17,9 @@ const About = () => {
         </p>
 
         <div className="home-about__numbers-container flex">
-          <p className="home-about__number flex-column">
-            <span>7+</span>
-            <span>
-              years of <br /> experience
-            </span>
-          </p>
-          <p className="home-about__number flex-column">
-            <span>2</span>
-            <span>
-              startups <br /> founded
-            </span>
-          </p>
-          <p className="home-about__number flex-column">
-            <span>$200K</span>
-            <span>
-              grants <br /> raised
-            </span>
-          </p>
+          <Stat number='7+' firstText='years of' secondText='experience' />
+          <Stat number='2' firstText='startups' secondText='founded' />
+          <Stat number='$200K' firstText='grants' secondText='raised' />
         </div>
 
         <p className="home-about__text">

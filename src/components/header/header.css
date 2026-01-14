@@ -1,7 +1,7 @@
 .header {
   position: sticky;
   top: 1.5rem;
-  z-index: 3;
+  z-index: 5;
 }
 
 .header.active .header__logo,

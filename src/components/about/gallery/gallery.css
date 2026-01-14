@@ -1,0 +1,44 @@
+.about-gallery__section {
+    overflow: hidden;
+}
+
+.about-gallery__heading {
+}
+
+.about-gallery__subheading {
+    font-style: italic;
+    margin: 1.25rem 0 1.5rem;
+}
+
+.about-gallery__container {
+    width: 100%;
+    padding-bottom: 2rem;
+    overflow-x: auto;
+}
+
+
+/* Scrollbar Styling */
+.about-gallery__container::-webkit-scrollbar {
+  height: 4px;
+}
+
+.about-gallery__container::-webkit-scrollbar-track {
+  background: var(--color-scrollbar-track);
+}
+
+.about-gallery__container::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb);
+  border-radius: 4px;
+}
+
+.about-gallery__container-inner {
+    width: max-content;
+    display: flex;
+    gap: 1.25rem;
+}
+
+.about-gallery__image-container {
+    width: min(100vw, 21.875rem);
+    aspect-ratio: 1 / 1.35;
+    background-color: grey;
+}

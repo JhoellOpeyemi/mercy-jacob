@@ -5,7 +5,6 @@ import Brands from "@/components/home/brands/Brands";
 import Services from "@/components/home/services/Services";
 import MessageIcon from "@/components/ui/message-icon/MessageIcon";
 import Testimonials from "@/components/home/testimonials/Testimonials";
-import Contact from "@/components/contact/Contact";
 
 const Home = () => {
   return (
@@ -16,7 +15,6 @@ const Home = () => {
       <Brands />
       <Services />
       <Testimonials />
-      <Contact />
     </div>
   );
 };

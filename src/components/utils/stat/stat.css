@@ -1,0 +1,16 @@
+.stat {
+  align-items: center;
+  text-align: center;
+  line-height: 1.3;
+  color: var(--color-dark-text);
+}
+
+.stat span:first-child {
+  font-size: var(--font-md-text);
+  font-weight: 500;
+}
+
+.stat span:last-child {
+  font-size: var(--font-sm-text);
+  font-weight: 300;
+}

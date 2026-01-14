@@ -39,6 +39,6 @@ span {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-light);
+  background: var(--color-scrollbar-thumb);
   border-radius: 4px;
 }

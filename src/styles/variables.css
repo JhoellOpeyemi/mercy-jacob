@@ -6,6 +6,8 @@
   --color-light: #888;
   --color-lighter: #ccc;
   --color-input-bg: #dfdfdf;
+  --color-scrollbar-track: #dfdfdf;
+  --color-scrollbar-thumb: #444;
 
   /* lowest values */
   --font-sm-text: 0.875rem;
@@ -13,6 +15,8 @@
   --font-md-text: 1.25rem;
   --font-l-text: 1.5rem;
   --font-xl-text: 2rem;
+  --font-xxl-text: 5rem;
+  --font-page-heading: 2.5rem;
   --font-section-heading: 3rem;
   --font-subsection-heading: 1.5rem;
   --font-button: 1.125rem;

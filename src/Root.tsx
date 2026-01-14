@@ -2,7 +2,8 @@
 import { Outlet } from "react-router";
 // components import
 import Header from "@/components/header/Header";
-import SmoothScroll from "./components/utils/SmoothScroll";
+import SmoothScroll from "@/components/utils/SmoothScroll";
+import Footer from "@/components/footer/Footer";
 
 // styles import
 import "@/styles/resets.css";
@@ -17,6 +18,8 @@ const Root = () => {
         <Header />
 
         <Outlet />
+
+        <Footer />
       </div>
     </SmoothScroll>
   );

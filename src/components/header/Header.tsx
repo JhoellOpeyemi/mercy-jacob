@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 // components import
-import Nav from "@/components/nav/Nav";
+import Nav from "./nav/Nav";
 // styles import
 import "./header.css";
 
@@ -11,6 +11,10 @@ const Header = () => {
 
   const handleNav = () => {
     setIsNavOpen((prev) => !prev);
+  };
+
+  const closeNav = () => {
+    setIsNavOpen(false);
   };
 
   return (
@@ -25,7 +29,7 @@ const Header = () => {
         MJ
       </p>
 
-      <Nav isNavOpen={isNavOpen} />
+      <Nav isNavOpen={isNavOpen} closeNav={closeNav} />
 
       <p className="header__time">10:44</p>
 

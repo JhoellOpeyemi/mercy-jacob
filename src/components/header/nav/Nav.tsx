@@ -8,9 +8,10 @@ import "./nav.css";
 
 interface NavProps {
   isNavOpen: boolean;
+  closeNav: () => void
 }
 
-const Nav = ({ isNavOpen }: NavProps) => {
+const Nav = ({ isNavOpen, closeNav }: NavProps) => {
   return (
     <>
       {isNavOpen && (
@@ -18,7 +19,7 @@ const Nav = ({ isNavOpen }: NavProps) => {
           <ul className="nav__list">
             {links.map((link) => (
               <li key={link.path} className="nav__item">
-                <NavLink to={link.path} className="nav__link">
+                <NavLink to={link.path} className="nav__link" onClick={closeNav}>
                   {link.label}
                 </NavLink>
               </li>

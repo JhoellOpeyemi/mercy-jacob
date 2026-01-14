@@ -1,0 +1,28 @@
+.services-content .page-heading {
+    display: none;
+}
+
+.services-content__list {
+    height: max-content;
+    scroll-snap-type: y mandatory;
+}
+
+.services-content__item {
+    height: 100vh;
+    min-height: 100vh;
+    scroll-snap-align: start;
+    padding: 4.5rem 0 3rem;
+    border-bottom: 1px solid var(--color-light);
+}
+
+.services-content__item-image {
+    width: min(100%, 31.25rem);
+    height: 50vh;
+    background-color: grey;
+}
+
+.services-content__item-heading {
+    font-size: var(--font-l-text);
+    font-weight: 500;
+    margin: 1.5rem 0 1rem;
+}

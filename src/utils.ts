@@ -24,16 +24,22 @@ export const servicesList = [
     title: "Service One",
     description:
       "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commodo",
+    full_description:
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commodo",
   },
   {
     title: "Service Two",
     description:
       "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus t",
+    full_description:
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commodo",
   },
   {
     title: "Service Three",
     description:
       "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commodo uismod porttitor ut. Nibh et ullamcorper commodo",
+    full_description:
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commodo",
   },
 ];
 
@@ -54,3 +60,35 @@ export const testimonialsList = [
     author: "Christiana",
   },
 ];
+
+export const careerHighlights =[
+    {
+        year: 2016,
+        highlights: ['Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis']
+    },
+    {
+        year: 2017,
+        highlights: ['Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis']
+    },
+    {
+        year: 2019,
+        highlights: ['Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis']
+    },
+    {
+        year: 2021,
+        highlights: ['Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis']
+    },
+    {
+        year: 2022,
+        highlights: ['Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis']
+    },
+    {
+        year: 2023,
+        highlights: ['Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis']
+    },
+    {
+        year: 2025,
+        highlights: ['Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis']
+    }
+];
+
