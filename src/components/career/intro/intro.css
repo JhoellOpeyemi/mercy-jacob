@@ -1,0 +1,18 @@
+.career__intro-section {
+  padding: 6.5rem 0 4rem;
+  border-bottom: 1px solid var(--color-light);
+}
+
+.career__intro-content {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.career__intro-image {
+  width: 100%;
+  height: 55vh;
+  height: 55svh;
+  background-color: grey;
+}
