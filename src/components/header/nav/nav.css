@@ -3,6 +3,8 @@
   width: 100%;
   height: 100vh;
   min-height: 100vh;
+  height: 100dvh;
+  min-height: 100dvh;
   top: 0;
   left: 0;
   background-color: var(--color-dark-bg);
@@ -21,7 +23,7 @@
 }
 
 .nav__item {
-    padding: 1rem 0;
+    padding: 1.25rem 0;
 }
 
 .nav__item:not(:last-child) {
@@ -32,6 +34,10 @@
   text-transform: uppercase;
   font-size: var(--font-xl-text);
   line-height: 1.1;
+}
+
+.nav__link.active {
+    color: var(--color-light);
 }
 
 .nav__socials-list {

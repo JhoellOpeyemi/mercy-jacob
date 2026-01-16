@@ -55,3 +55,23 @@
   width: 60%;
   align-self: flex-end;
 }
+
+/* min width 769px */
+@media screen and (min-width: 48.0625rem) {
+    .header__logo {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    .header__time,
+    .header__menu.flex-column {
+        display: none;
+    }
+}
+
+/* min width 1025px */
+@media screen and (min-width: 64.0625rem) {
+    .header__time {
+        display: block;
+    }
+}

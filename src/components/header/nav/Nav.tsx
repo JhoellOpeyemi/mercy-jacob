@@ -1,8 +1,10 @@
 import { NavLink } from "react-router";
-
 // utils import
 import { links } from "@/utils";
-
+// hooks import
+import { useWindowSize } from "@/hooks/useWindowSize";
+// components import
+import DesktopNav from './desktop/DesktopNav'
 // styles import
 import "./nav.css";
 
@@ -12,6 +14,9 @@ interface NavProps {
 }
 
 const Nav = ({ isNavOpen, closeNav }: NavProps) => {
+    const windowSize = useWindowSize()
+    const isDesktop = windowSize.width > 768
+
   return (
     <>
       {isNavOpen && (
@@ -44,6 +49,10 @@ const Nav = ({ isNavOpen, closeNav }: NavProps) => {
             </li>
           </ul>
         </nav>
+      )}
+
+      {isDesktop && (
+        <DesktopNav />
       )}
     </>
   );
