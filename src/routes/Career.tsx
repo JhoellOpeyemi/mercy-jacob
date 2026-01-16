@@ -1,16 +1,10 @@
 // components import
-import MessageIcon from "@/components/ui/message-icon/MessageIcon";
-import Intro from "@/components/career/intro/Intro";
-import Highlights from "@/components/utils/highlights/Highlights";
-// utils import
-import { careerHighlights } from "@/utils";
+import CareerContent from '@/components/career/career-content/CareerContent'
 
 const Career = () => {
   return (
     <main className="career page-container">
-      <Intro />
-      <MessageIcon />
-      <Highlights highlightsArray={careerHighlights} />
+      <CareerContent />
     </main>
   );
 };

@@ -12,7 +12,7 @@ interface HighlightProps {
 
 const Highlights = ({ highlightsArray }: HighlightProps) => {
   return (
-    <section className="highlights-section section-container">
+    <section className="highlights-section">
       <div className="highlights-section__content">
         <div className="highlights-section__year-sidebar flex-column">
           {highlightsArray.map(({ year }) => (

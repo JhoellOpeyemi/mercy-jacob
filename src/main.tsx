@@ -8,6 +8,7 @@ import Home from "@/routes/Home.tsx";
 import About from "@/routes/About.tsx";
 import Services from "@/routes/Services.tsx";
 import Career from "@/routes/Career.tsx";
+import Process from "@/routes/Process";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       { path: "about", element: <About /> },
       { path: "services", element: <Services /> },
       { path: "career", element: <Career /> },
+      { path: "process", element: <Process /> },
     ],
   },
 ]);

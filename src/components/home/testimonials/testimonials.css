@@ -5,10 +5,11 @@
 .home-testimonials .ui-quote {
   position: absolute;
   top: -2.5rem;
-  left: 5%;
+  left: 0;
   pointer-events: none;
   user-select: none;
   z-index: -1;
+  opacity: 0.5;
 }
 
 .home-testimonials__heading {

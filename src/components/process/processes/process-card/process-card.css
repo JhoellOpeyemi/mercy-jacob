@@ -1,0 +1,5 @@
+.process__heading {
+  font-size: var(--font-l-text);
+  font-weight: 500;
+  margin: 0 0 1rem;
+}

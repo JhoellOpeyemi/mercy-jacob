@@ -3,13 +3,12 @@
 }
 
 .services-content__list {
-  height: max-content;
+  padding: 3rem 0 0;
 }
 
 .services-content__item {
-  height: 100vh;
-  min-height: 100vh;
-  padding: 4.5rem 0 3rem;
+  height: fit-content;
+  padding: 4.5rem 0 3.5rem;
   border-bottom: 1px solid var(--color-light);
 }
 

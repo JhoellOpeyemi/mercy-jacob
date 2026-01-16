@@ -61,7 +61,7 @@ export const testimonialsList = [
   },
 ];
 
-export const careerHighlights =[
+export const careerHighlights = [
     {
         year: 2016,
         highlights: ['Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis']
@@ -91,4 +91,27 @@ export const careerHighlights =[
         highlights: ['Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis']
     }
 ];
+
+export const processesList = [
+    {
+        title: 'Process One',
+        description: 'Briefly describe process one. Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commodo fringilla. Viverra et id semper arcu Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commodo fringilla. Viverra et id semper arcu'
+    },
+    {
+        title: 'Process Two',
+        description: 'Briefly describe process two. Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commodo fringilla. Viverra et id semper arcu Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut.'
+    },
+    {
+        title: 'Process Three',
+        description: 'Briefly describe process three. Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commo'
+    },
+    {
+        title: 'Process Four',
+        description: 'Briefly describe process four. Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commo'
+    },
+    {
+        title: 'Process Five',
+        description: "Briefly describe process five. Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commo"
+    }
+]
 
