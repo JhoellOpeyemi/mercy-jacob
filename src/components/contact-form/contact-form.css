@@ -1,5 +1,5 @@
 .contact-form {
-  width: min(100%, 31.25rem);
+  width: min(100%, 43.125rem);
   margin: 0 auto;
 }
 
@@ -29,4 +29,25 @@
 
 .contact-form button {
   margin: 2rem 0 0;
+}
+
+/* min-width 769px */
+@media screen and (min-width: 48.0625rem) {
+    .contact-form__input-group {
+        display:flex;
+        flex-direction: row;
+        gap: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-form__input-container {
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .contact-form .ui-button {
+        display: block;
+        width: fit-content;
+        margin: 2rem auto 0;
+    }
 }

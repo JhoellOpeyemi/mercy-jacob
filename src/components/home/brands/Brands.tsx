@@ -10,13 +10,16 @@ const Brands = () => {
         Brands i've worked with
       </h3>
 
-      <ul className="home-brands__list">
-        {brandsList.map((brand) => (
-          <li key={brand} className="home-brands__item">
-            {brand}
-          </li>
-        ))}
-      </ul>
+      <div className="home-brands__list-container">
+        <ul className="home-brands__list">
+          {brandsList.map((brand) => (
+            <li key={brand} className="home-brands__item">
+              {brand}
+            </li>
+          ))}
+        </ul>
+        <div className="home-brands__divider" />
+      </div>
     </section>
   );
 };

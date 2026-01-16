@@ -1,31 +1,31 @@
 .desktop-nav__list {
-    gap: 2.5rem;
+  gap: 2.75rem;
 }
 
 .desktop-nav__link {
-    position: relative;
-    font-size: 1.15rem;
-    /* font-weight: 500; */
-    transition: color 0.35s ease;
+  position: relative;
+  font-size: 1.15rem;
+  /* font-weight: 500; */
+  transition: color 0.35s ease;
 }
 
 .desktop-nav__link::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 0.125rem;
-    width: 0%;
-    background-color: var(--color-dark-text);
-    transition: width 0.35s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.125rem;
+  width: 0%;
+  background-color: var(--color-dark-text);
+  transition: width 0.35s ease;
 }
 
 .desktop-nav__link.active {
-    color: #000;
-    transition: color 0.35s ease;
+  color: #000;
+  transition: color 0.35s ease;
 }
 
 .desktop-nav__link.active::before {
-    width: 100%;
-    transition: width 0.35s ease;
+  width: 100%;
+  transition: width 0.35s ease;
 }

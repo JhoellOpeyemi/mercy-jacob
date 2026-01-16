@@ -12,3 +12,21 @@
   font-weight: 600;
   color: var(--color-dark-text);
 }
+
+/* min-width 651px */
+@media screen and (min-width: 40.6875rem) {
+    .contact__intro {
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .contact__heading {
+        text-transform: uppercase;
+    }
+
+    .contact__description {
+        font-size: 1.25rem;
+        width: 28.125rem;
+        margin: 0 auto;
+    }
+}

@@ -1,23 +1,25 @@
 :root {
   --color-bg: #fafafa;
+  --color-bg-half: #fafafa80;
   --color-dark-bg: #222;
   --color-text: #444;
   --color-dark-text: #222;
   --color-light: #888;
   --color-lighter: #ccc;
   --color-input-bg: #dfdfdf;
+  --color-card-bg: #eaeaea;
   --color-scrollbar-track: #dfdfdf;
   --color-scrollbar-thumb: #444;
 
   /* lowest values */
   --font-sm-text: 0.875rem;
   --font-text: 1rem;
-  --font-md-text: 1.25rem;
+  --font-md-text: clamp(1.25rem, 3vw + 0.2rem, 2.5rem);
   --font-l-text: clamp(1.5rem, 4vw + 0.2rem, 3.5rem);
   --font-xl-text: 2rem;
   --font-xxl-text: 5rem;
   --font-page-heading: 2.5rem;
   --font-section-heading: 3rem;
-  --font-subsection-heading: 1.5rem;
+  --font-subsection-heading: clamp(1.5rem, 3.5vw + 0.2rem, 2.5rem);
   --font-button: 1.125rem;
 }

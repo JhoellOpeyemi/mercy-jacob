@@ -42,3 +42,10 @@ span {
   background: var(--color-scrollbar-thumb);
   border-radius: 4px;
 }
+
+/* min-width 769px */
+@media screen and (min-width: 48.0625rem) {
+  p {
+    line-height: 1.6;
+  }
+}

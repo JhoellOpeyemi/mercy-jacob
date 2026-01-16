@@ -48,3 +48,16 @@
   font-weight: 400;
   text-transform: capitalize;
 }
+
+/* min-width 769px */
+@media screen and (min-width: 48.0625rem) {
+  .section-heading,
+  .subsection-heading {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .section-container {
+    padding: 6rem 0;
+  }
+}
