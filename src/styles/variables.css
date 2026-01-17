@@ -15,10 +15,10 @@
   --font-sm-text: 0.875rem;
   --font-text: 1rem;
   --font-md-text: clamp(1.25rem, 3vw + 0.2rem, 2.5rem);
-  --font-l-text: clamp(1.5rem, 4vw + 0.2rem, 3.5rem);
+  --font-l-text: clamp(1.5rem, 4vw + 0.2rem, 3.25rem);
   --font-xl-text: 2rem;
-  --font-xxl-text: 5rem;
-  --font-page-heading: 2.5rem;
+  --font-xxl-text: clamp(5rem, 15vw + 0.2rem, 10rem);
+  --font-page-heading: clamp(2.5rem, 5vw + 0.2rem, 4rem);
   --font-section-heading: 3rem;
   --font-subsection-heading: clamp(1.5rem, 3.5vw + 0.2rem, 2.5rem);
   --font-button: 1.125rem;

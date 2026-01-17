@@ -33,7 +33,7 @@ const Highlights = ({ highlightsArray }: HighlightProps) => {
                 ))}
               </ul>
 
-              <h4 className="highlights-section__year-heading">{year}</h4>
+              <h4 className="highlights-section__year-heading playfair-display">{year}</h4>
             </div>
           ))}
         </div>

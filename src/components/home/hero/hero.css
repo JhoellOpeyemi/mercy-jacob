@@ -41,7 +41,7 @@
 @media screen and (min-width: 48.0625rem) {
   .hero {
     min-height: 100vh;
-    padding: 6rem 0;
+    padding: 6rem 0 7rem;
     width: 90%;
   }
 
@@ -51,8 +51,8 @@
     aspect-ratio: 5/4;
     max-height: 23rem;
     align-self: flex-end;
-    order: 2;
-    margin: 1.5rem 0;
+    order: 3;
+    margin: 1.5rem 0 0;
   }
 
   .hero__title {
@@ -67,7 +67,7 @@
   }
 
   .hero__subtitle-container {
-    order: 3;
+    order: 2;
   }
 
   .hero__subtitle-container.flex-column {
@@ -75,6 +75,7 @@
     flex-direction: row;
     align-self: flex-end;
     gap: 3rem;
+    margin: 2rem 0 0;
   }
 
   .hero__subtitle-container button {
