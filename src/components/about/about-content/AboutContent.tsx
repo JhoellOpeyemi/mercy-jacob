@@ -1,9 +1,11 @@
 // components import
 import Stat from "@/components/utils/stat/Stat";
 import Heading from "@/components/utils/heading/Heading";
+import Image from "@/components/utils/image/Image";
 
 // styles import
 import "./about-content.css";
+import Text from "@/components/utils/text/Text";
 
 const AboutContent = () => {
   return (
@@ -12,22 +14,16 @@ const AboutContent = () => {
 
       <div className="about-content__container flex-column">
         <div className="about-content__intro">
-          <div className="about-content__intro-image"></div>
+          <div className="about-content__intro-image">
+            <Image src="/public/anjy.jpg" alt="alt" />
+          </div>
           <div className="about-content__intro-texts">
             <p>
-              Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat
-              eget interdum at integer. Lacus tempor aenean eu lobortis varius a
-              euismod porttitor ut. Nibh et ullamcorper commodo fringilla.
-              Viverra et id semper arcu faucibus molestie congue ultrices
-              scelerisque. Risus morbi aliquam eget lacus tempor. Auctor nisl
-              montes eget donec cras.
+              <Text texts="Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commodo fringilla. Viverra et id semper arcu faucibus molestie congue ultrices scelerisque. Risus morbi aliquam eget lacus tempor. Auctor nisl montes eget donec cras." />
             </p>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat
-              eget interdum at integer. Lacus tempor aenean eu lobortis varius a
-              euismod porttitor ut. Nibh et ullamcorper commodo fringilla.
-              Viverra et id semper arcu faucibus{" "}
+              <Text texts="Lorem ipsum dolor sit amet consectetur. Facilisi risu volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commodo fringilla. Viverra et id semper arcu faucibus" />
             </p>
           </div>
         </div>
@@ -48,16 +44,10 @@ const AboutContent = () => {
 
         <div className="about-content__outro">
           <p>
-            Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget
-            interdum at integer. Lacus tempor aenean eu lobortis varius
+            <Text texts="Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius" />
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget
-            interdum at integer. Lacus tempor aenean eu lobortis varius a
-            euismod porttitor ut. Nibh et ullamcorper commodo fringilla. Viverra
-            et id semper arcu faucibus molestie congue ultrices scelerisque.
-            Risus morbi aliquam eget lacus tempor. Auctor nisl montes eget donec
-            cras.
+            <Text texts="Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commodo fringilla. Viverra et id semper arcu faucibus molestie congue ultrices scelerisque. Risus morbi aliquam eget lacus tempor. Auctor nisl montes eget donec cras." />
           </p>
         </div>
       </div>

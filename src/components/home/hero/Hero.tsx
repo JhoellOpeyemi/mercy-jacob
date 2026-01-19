@@ -1,25 +1,39 @@
+// hooks import
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 // components import
 import Button from "@/components/ui/button/Button";
+import Image from "@/components/utils/image/Image";
+import Text from "@/components/utils/text/Text";
 // styled import
 import "./hero.css";
+import Word from "@/components/utils/word/Word";
+
+gsap.registerPlugin(useGSAP);
 
 const Hero = () => {
-  return (
-    <div className='hero-container'>
-        <main className="hero flex-column">
-        <div className="hero__media"></div>
+  const heroRef = useRef<HTMLDivElement>(null);
 
-        <h1 className="hero__title"><span>I'm</span> Mercy Jacob</h1>
+  return (
+    <div className="hero-container" ref={heroRef}>
+      <main className="hero flex-column">
+        <div className="hero__media">
+          <Image src="/public/anjy.jpg" alt="alt" />
+        </div>
+
+        <h1 className="hero__title">
+          <Word words="I'm Mercy Jacob" />
+        </h1>
 
         <div className="hero__subtitle-container flex-column">
-            <p className="hero__subtitle poppins">
-                Lorem ipsum dolo sit consectetur.
-                Laoreet cursus enim laoreet arcu cursus ante.
-            </p>
+          <p className="hero__subtitle poppins">
+            <Text texts="Lorem ipsum dolo sit consectetur. Laoreet cursus enim laoreet arcu cursus ante." />
+          </p>
 
-            <Button label="Let's work" />
+          <Button label="Let's work" />
         </div>
-        </main>
+      </main>
     </div>
   );
 };

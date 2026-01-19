@@ -2,12 +2,13 @@
 import { brandsList } from "@/utils";
 // styles import
 import "./brands.css";
+import Word from "@/components/utils/word/Word";
 
 const Brands = () => {
   return (
     <section className="home-brands section-container">
       <h3 className="home-brands__heading subsection-heading">
-        Brands i've worked with
+        <Word words="Brands i've worked with" />
       </h3>
 
       <div className="home-brands__list-container">

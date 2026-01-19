@@ -1,5 +1,6 @@
 // components import
 import QuoteIcon from "@/components/ui/quote-icon/QuoteIcon";
+import Text from "@/components/utils/text/Text";
 // utils import
 import { testimonialsList } from "@/utils";
 // styles import
@@ -19,7 +20,9 @@ const Testimonials = () => {
         {testimonialsList.map(({ testimonial, author }) => (
           <li key={author} className="home-testimonials__item">
             <blockquote className="home-testimonials__quote">
-              <p>{testimonial}</p>
+              <p>
+                <Text texts={testimonial} />
+              </p>
             </blockquote>
 
             <p className="home-testimonials__author"> — {author}</p>

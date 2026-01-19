@@ -1,0 +1,8 @@
+.splitted-word__container {
+  display: block;
+  overflow: hidden;
+}
+
+.splitted-word {
+  transform: translateY(0%);
+}

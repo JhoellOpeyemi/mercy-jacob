@@ -62,56 +62,102 @@ export const testimonialsList = [
 ];
 
 export const careerHighlights = [
-    {
-        year: 2016,
-        highlights: ['Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis']
-    },
-    {
-        year: 2017,
-        highlights: ['Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis']
-    },
-    {
-        year: 2019,
-        highlights: ['Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis']
-    },
-    {
-        year: 2021,
-        highlights: ['Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis']
-    },
-    {
-        year: 2022,
-        highlights: ['Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis']
-    },
-    {
-        year: 2023,
-        highlights: ['Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis']
-    },
-    {
-        year: 2025,
-        highlights: ['Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.', 'Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis']
-    }
+  {
+    year: 2016,
+    highlights: [
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis",
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.",
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis",
+    ],
+  },
+  {
+    year: 2017,
+    highlights: [
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis",
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.",
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis",
+    ],
+  },
+  {
+    year: 2019,
+    highlights: [
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis",
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.",
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis",
+    ],
+  },
+  {
+    year: 2021,
+    highlights: [
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis",
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.",
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis",
+    ],
+  },
+  {
+    year: 2022,
+    highlights: [
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis",
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.",
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis",
+    ],
+  },
+  {
+    year: 2023,
+    highlights: [
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis",
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.",
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis",
+    ],
+  },
+  {
+    year: 2025,
+    highlights: [
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis",
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer.",
+      "Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis",
+    ],
+  },
 ];
 
 export const processesList = [
-    {
-        title: 'Process One',
-        description: 'Briefly describe process one. Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commodo fringilla. Viverra et id semper arcu Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commodo fringilla. Viverra et id semper arcu'
-    },
-    {
-        title: 'Process Two',
-        description: 'Briefly describe process two. Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commodo fringilla. Viverra et id semper arcu Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut.'
-    },
-    {
-        title: 'Process Three',
-        description: 'Briefly describe process three. Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commo'
-    },
-    {
-        title: 'Process Four',
-        description: 'Briefly describe process four. Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commo'
-    },
-    {
-        title: 'Process Five',
-        description: "Briefly describe process five. Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commo"
-    }
-]
+  {
+    title: "Process One",
+    description:
+      "Briefly describe process one. Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commodo fringilla. Viverra et id semper arcu Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commodo fringilla. Viverra et id semper arcu",
+  },
+  {
+    title: "Process Two",
+    description:
+      "Briefly describe process two. Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commodo fringilla. Viverra et id semper arcu Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut.",
+  },
+  {
+    title: "Process Three",
+    description:
+      "Briefly describe process three. Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commo",
+  },
+  {
+    title: "Process Four",
+    description:
+      "Briefly describe process four. Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commo",
+  },
+  {
+    title: "Process Five",
+    description:
+      "Briefly describe process five. Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commo",
+  },
+];
 
+// animation - cubic bezier
+export const easeEntrance = "cubic-bezier(0.34, 1.56, 0.64, 1)";
+export const easeExit = "cubic-bezier(0.77, 0, 0.175, 1)";
+export const easeEntranceArray = [0.34, 1.56, 0.64, 1];
+export const easeExitArray = [0.77, 0, 0.175, 1];
+
+export const splitTextByCharacters = (text: string): string[] => {
+  return text.split("").map((char) => (char === " " ? "&nbsp;" : char));
+};
+
+export const splitTextByWords = (text: string): string[] => {
+  return text.split(" ").map((word) => (word === " " ? "&nbsp;" : word));
+};

@@ -1,16 +1,17 @@
-.processes__list {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+.processes__list,
+.process__item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .process-connector {
-    width: 0.125rem;
-    height: 8rem;
-    background-color: var(--color-light);
-    align-self: center;
+  width: 0.125rem;
+  height: 8rem;
+  background-color: var(--color-light);
+  align-self: center;
 }
 
-.process-connector:last-of-type {
-    display: none;
+.process__item-container:last-child .process-connector {
+  display: none;
 }

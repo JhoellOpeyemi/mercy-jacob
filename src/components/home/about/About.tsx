@@ -1,7 +1,7 @@
 // components import
 import Button from "@/components/ui/button/Button";
 import Stat from "@/components/utils/stat/Stat";
-
+import Text from "@/components/utils/text/Text";
 // styled import
 import "./about.css";
 
@@ -13,12 +13,7 @@ const About = () => {
 
         <div className="home-about__content">
           <p className="home-about__text">
-            Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget
-            interdum at integer. Lacus tempor aenean eu lobortis varius a
-            euismod porttitor ut. Nibh et ullamcorper commodo fringilla. Viverra
-            et id semper arcu faucibus molestie congue ultrices scelerisque.
-            Risus morbi aliquam eget lacus tempor. Auctor nisl montes eget donec
-            cras.
+            <Text texts="Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commodo fringilla. Viverra et id semper arcu faucibus molestie congue ultrices scelerisque. Risus morbi aliquam eget lacus tempor. Auctor nisl montes eget donec cras." />
           </p>
 
           <div className="home-about__numbers-container flex">
@@ -28,12 +23,7 @@ const About = () => {
           </div>
 
           <p className="home-about__text">
-            Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget
-            interdum at integer. Lacus tempor aenean eu lobortis varius a
-            euismod porttitor ut. Nibh et ullamcorper commodo fringilla. Viverra
-            et id semper arcu faucibus molestie congue ultrices scelerisque.
-            Risus morbi aliquam eget lacus tempor. Auctor nisl montes eget donec
-            cras.
+            <Text texts=" Lorem ipsum dolor sit amet consectetur. Facilisi risus volutpat eget interdum at integer. Lacus tempor aenean eu lobortis varius a euismod porttitor ut. Nibh et ullamcorper commodo fringilla. Viverra et id semper arcu faucibus molestie congue ultrices scelerisque. Risus morbi aliquam eget lacus tempor. Auctor nisl montes eget donec cras." />
           </p>
 
           <Button label="Read more" />

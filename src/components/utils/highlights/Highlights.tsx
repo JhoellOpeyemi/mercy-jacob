@@ -1,4 +1,5 @@
 // styles import
+import Text from "../text/Text";
 import "./highlights.css";
 
 export interface HighlightsType {
@@ -28,12 +29,14 @@ const Highlights = ({ highlightsArray }: HighlightProps) => {
               <ul className="highlights-section__list">
                 {highlights.map((highlight, index) => (
                   <li key={index} className="highlights-section__item">
-                    {highlight}
+                    <Text texts={highlight} />
                   </li>
                 ))}
               </ul>
 
-              <h4 className="highlights-section__year-heading playfair-display">{year}</h4>
+              <h4 className="highlights-section__year-heading playfair-display">
+                {year}
+              </h4>
             </div>
           ))}
         </div>

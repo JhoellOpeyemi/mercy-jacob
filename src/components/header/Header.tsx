@@ -1,12 +1,18 @@
 // hooks import
-import { useState } from "react";
-
+import { useRef, useState } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 // components import
 import Nav from "./nav/Nav";
 // styles import
 import "./header.css";
+import { headerAnimation } from "./animation";
+
+gsap.registerPlugin(useGSAP);
 
 const Header = () => {
+  const headerRef = useRef<HTMLElement>(null);
+
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
 
   const handleNav = () => {
@@ -17,8 +23,16 @@ const Header = () => {
     setIsNavOpen(false);
   };
 
+  useGSAP(
+    () => {
+      headerAnimation();
+    },
+    { scope: headerRef },
+  );
+
   return (
     <header
+      ref={headerRef}
       className={`${
         isNavOpen
           ? "header active flex-between page-container"

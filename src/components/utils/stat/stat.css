@@ -5,12 +5,18 @@
   color: var(--color-dark-text);
 }
 
-.stat span:first-child {
-  font-size: var(--font-md-text);
-  font-weight: 500;
+.stat__number-container {
+  display: block;
+  overflow: hidden;
 }
 
-.stat span:last-child {
+.stat__number-container span {
+  font-size: var(--font-md-text);
+  font-weight: 500;
+  transform: translateY(0%);
+}
+
+.stat__desc {
   font-size: var(--font-sm-text);
   font-weight: 300;
 }

@@ -1,7 +1,10 @@
 // utils import
 import { servicesList } from "@/utils";
+// components import
+import Text from "@/components/utils/text/Text";
 // styles import
 import "./services.css";
+import Word from "@/components/utils/word/Word";
 
 const Services = () => {
   return (
@@ -16,10 +19,12 @@ const Services = () => {
         {servicesList.map((service) => (
           <li key={service.title} className="home-services__item">
             <h3 className="home-services__item-heading">
-              {service.title}
+              <Word words={service.title} />
             </h3>
 
-            <p className="home-services__item-desc">{service.description}</p>
+            <p className="home-services__item-desc">
+              <Text texts={service.description} />
+            </p>
           </li>
         ))}
       </ul>
