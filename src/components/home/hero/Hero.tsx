@@ -1,7 +1,5 @@
 // hooks import
 import { useRef } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 // components import
 import Button from "@/components/ui/button/Button";
 import Image from "@/components/utils/image/Image";
@@ -9,8 +7,6 @@ import Text from "@/components/utils/text/Text";
 // styled import
 import "./hero.css";
 import Word from "@/components/utils/word/Word";
-
-gsap.registerPlugin(useGSAP);
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);

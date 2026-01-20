@@ -21,7 +21,7 @@ const Image = ({ src, alt }: ImageProps) => {
     () => {
       const animation = gsap.to(".image-overlay", {
         clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-        delay: 1,
+        delay: 0.5,
         ease: easeEntrance,
       });
 

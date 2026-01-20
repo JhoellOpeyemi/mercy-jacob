@@ -3,7 +3,7 @@ import { easeEntrance } from "@/utils";
 
 export const headerAnimation = () => {
   const timeline = gsap.timeline({
-    delay: 1,
+    delay: 0.5,
   });
   timeline
     .from([".header__logo", ".header__time"], {

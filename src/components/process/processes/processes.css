@@ -10,6 +10,7 @@
   height: 8rem;
   background-color: var(--color-light);
   align-self: center;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 
 .process__item-container:last-child .process-connector {

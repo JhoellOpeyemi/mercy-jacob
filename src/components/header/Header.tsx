@@ -1,5 +1,5 @@
 // hooks import
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 // components import
@@ -14,6 +14,7 @@ const Header = () => {
   const headerRef = useRef<HTMLElement>(null);
 
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
+  const [currentTime, setCurrentTime] = useState<string>("");
 
   const handleNav = () => {
     setIsNavOpen((prev) => !prev);
@@ -22,6 +23,25 @@ const Header = () => {
   const closeNav = () => {
     setIsNavOpen(false);
   };
+
+  useEffect(() => {
+    const getCurrentTime = (): string => {
+      const now = new Date();
+      const hours = String(now.getHours()).padStart(2, "0");
+      const minutes = String(now.getMinutes()).padStart(2, "0");
+      const time = `${hours}:${minutes}`;
+      setCurrentTime(time);
+      return time;
+    };
+
+    getCurrentTime();
+
+    const interval = setInterval(() => {
+      setCurrentTime(getCurrentTime());
+    }, 60000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   useGSAP(
     () => {
@@ -45,7 +65,7 @@ const Header = () => {
 
       <Nav isNavOpen={isNavOpen} closeNav={closeNav} />
 
-      <p className="header__time">10:44</p>
+      <p className="header__time">{currentTime}</p>
 
       <button
         className="header__menu flex-column"

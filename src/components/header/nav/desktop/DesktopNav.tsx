@@ -5,19 +5,19 @@ import { links } from "@/utils";
 import "./desktop-nav.css";
 
 const DesktopNav = () => {
-    return (
-        <nav className='desktop-nav playfair-display'>
-          <ul className="desktop-nav__list flex">
-            {links.map((link) => (
-              <li key={link.path} className="desktop-nav__item">
-                <NavLink to={link.path} className="desktop-nav__link">
-                  {link.label}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
-        </nav>
-    )
-}
+  return (
+    <nav className="desktop-nav playfair-display">
+      <ul className="desktop-nav__list flex">
+        {links.map((link) => (
+          <li key={link.path} className="desktop-nav__item">
+            <NavLink to={link.path} className="desktop-nav__link">
+              {link.label}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+};
 
-export default DesktopNav
+export default DesktopNav;

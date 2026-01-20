@@ -7,9 +7,15 @@
   min-height: 100dvh;
   top: 0;
   left: 0;
+  transform: translate(0%);
+  font-family: "Playfair Display", serif;
+}
+
+.nav__container {
+  height: 100%;
+  width: 100%;
   background-color: var(--color-dark-bg);
   color: var(--color-bg);
-  font-family: "Playfair Display", serif;
 }
 
 .nav__list {
@@ -23,21 +29,23 @@
 }
 
 .nav__item {
-    padding: 1.25rem 0;
+  padding: 1.25rem 0;
+  transform-origin: left;
 }
 
 .nav__item:not(:last-child) {
-    border-bottom: 1px solid var(--color-light);
+  border-bottom: 1px solid var(--color-light);
 }
 
 .nav__link {
   text-transform: uppercase;
   font-size: var(--font-xl-text);
   line-height: 1.1;
+  opacity: 1;
 }
 
 .nav__link.active {
-    color: var(--color-light);
+  color: var(--color-light);
 }
 
 .nav__socials-list {
