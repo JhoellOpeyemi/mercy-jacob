@@ -22,7 +22,7 @@ const Intro = ({
 
       <div className="intro-content">
         <div className="intro-image">
-          <Image src="/public/anjy.jpg" alt="alt" />
+          <Image src="/anjy.jpg" alt="alt" />
         </div>
         <p className="intro-text">
           <Text texts={introText} />

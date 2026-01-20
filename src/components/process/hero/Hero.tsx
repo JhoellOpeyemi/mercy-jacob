@@ -2,6 +2,8 @@
 import Intro from "@/components/utils/intro/Intro";
 import MessageIcon from "@/components/ui/message-icon/MessageIcon";
 
+import "./hero.css";
+
 const Hero = () => {
   return (
     <section className="process__hero">

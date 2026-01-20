@@ -28,7 +28,7 @@ const Text = ({ texts }: TextProps) => {
         // delay: 1,
         scrollTrigger: {
           trigger: textsRef.current,
-          start: "top 90%",
+          start: "top 80%",
         },
       });
     },

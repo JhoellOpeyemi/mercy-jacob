@@ -61,10 +61,6 @@
     font-weight: 600;
   }
 
-  .hero__title span {
-    display: none;
-  }
-
   .hero__subtitle-container {
     order: 2;
   }

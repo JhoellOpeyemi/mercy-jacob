@@ -29,7 +29,7 @@ const Word = ({ words }: WordProps) => {
         // delay: 1,
         scrollTrigger: {
           trigger: wordsRef.current,
-          start: "top 90%",
+          start: "top 80%",
         },
       });
     },

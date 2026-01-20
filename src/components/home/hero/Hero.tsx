@@ -19,7 +19,7 @@ const Hero = () => {
     <div className="hero-container" ref={heroRef}>
       <main className="hero flex-column">
         <div className="hero__media">
-          <Image src="/public/anjy.jpg" alt="alt" />
+          <Image src="/anjy.jpg" alt="alt" />
         </div>
 
         <h1 className="hero__title">

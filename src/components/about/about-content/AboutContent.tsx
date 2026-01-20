@@ -15,7 +15,7 @@ const AboutContent = () => {
       <div className="about-content__container flex-column">
         <div className="about-content__intro">
           <div className="about-content__intro-image">
-            <Image src="/public/anjy.jpg" alt="alt" />
+            <Image src="/anjy.jpg" alt="alt" />
           </div>
           <div className="about-content__intro-texts">
             <p>
