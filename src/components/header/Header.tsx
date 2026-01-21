@@ -14,14 +14,24 @@ const Header = () => {
   const headerRef = useRef<HTMLElement>(null);
 
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
+  const [numberOfClicks, setNumberOfClicks] = useState<number>(0);
   const [currentTime, setCurrentTime] = useState<string>("");
 
   const handleNav = () => {
-    setIsNavOpen((prev) => !prev);
+    const newClickCount = numberOfClicks + 1;
+    setNumberOfClicks(newClickCount);
+    setIsNavOpen(true);
+
+    if (newClickCount % 2 === 0) {
+      setTimeout(() => {
+        setIsNavOpen(false);
+      }, 1800);
+    }
   };
 
   const closeNav = () => {
     setIsNavOpen(false);
+    setNumberOfClicks(0);
   };
 
   useEffect(() => {
@@ -63,7 +73,11 @@ const Header = () => {
         MJ
       </p>
 
-      <Nav isNavOpen={isNavOpen} closeNav={closeNav} />
+      <Nav
+        isNavOpen={isNavOpen}
+        closeNav={closeNav}
+        numberOfClicks={numberOfClicks}
+      />
 
       <p className="header__time">{currentTime}</p>
 

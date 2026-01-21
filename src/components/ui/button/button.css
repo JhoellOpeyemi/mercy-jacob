@@ -1,4 +1,9 @@
+.ui-button__container {
+  width: fit-content;
+}
+
 .ui-button {
+  position: relative;
   background-color: var(--color-dark-bg);
   color: var(--color-bg);
   text-transform: capitalize;
@@ -6,4 +11,16 @@
   font-size: var(--font-button);
   border: 0;
   width: max-content;
+  overflow: hidden;
+}
+
+.ui-button__overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background-color: var(--color-bg);
+  transform: scaleX(0);
+  transform-origin: right;
+  pointer-events: none;
+  user-select: none;
 }

@@ -32,7 +32,7 @@
   color: var(--color-dark-text);
 }
 
-.hero__subtitle-container button {
+.hero__subtitle-container .ui-button__container {
   align-self: center;
 }
 
@@ -73,7 +73,7 @@
     margin: 2rem 0 0;
   }
 
-  .hero__subtitle-container button {
+  .hero__subtitle-container .ui-button__container {
     align-self: flex-end;
     white-space: nowrap;
   }

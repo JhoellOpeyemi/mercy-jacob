@@ -19,8 +19,8 @@ const Text = ({ texts }: TextProps) => {
 
   useGSAP(
     () => {
-      gsap.from(".splitted-text", {
-        opacity: 0.3,
+      gsap.from(".splitted-char", {
+        opacity: 0.1,
         duration: 0.5,
         stagger: {
           each: 0.005,
@@ -37,17 +37,16 @@ const Text = ({ texts }: TextProps) => {
 
   return (
     <span className="splitted-text__container" ref={textsRef}>
-      {splittedText.map((text, index) =>
-        text === "&nbsp;" ? (
-          <span key={index} className="splitted-text__white-space">
-            &nbsp;
-          </span>
-        ) : (
-          <span key={index} className="splitted-text">
-            {text}
-          </span>
-        ),
-      )}
+      {splittedText.map((text, index) => (
+        <span key={index} className="splitted-text">
+          {text.map((char, charIndex) => (
+            <span key={charIndex} className="splitted-char">
+              {char}
+            </span>
+          ))}
+          &nbsp;
+        </span>
+      ))}
     </span>
   );
 };

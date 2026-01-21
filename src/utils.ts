@@ -154,8 +154,8 @@ export const easeExit = "cubic-bezier(0.77, 0, 0.175, 1)";
 export const easeEntranceArray = [0.34, 1.56, 0.64, 1];
 export const easeExitArray = [0.77, 0, 0.175, 1];
 
-export const splitTextByCharacters = (text: string): string[] => {
-  return text.split("").map((char) => (char === " " ? "&nbsp;" : char));
+export const splitTextByCharacters = (text: string): string[][] => {
+  return text.split(" ").map((word) => word.split(""));
 };
 
 export const splitTextByWords = (text: string): string[] => {

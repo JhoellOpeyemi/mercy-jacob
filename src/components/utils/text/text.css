@@ -1,3 +1,7 @@
 .splitted-text {
+  white-space: nowrap;
+}
+
+.splitted-char {
   opacity: 1;
 }
