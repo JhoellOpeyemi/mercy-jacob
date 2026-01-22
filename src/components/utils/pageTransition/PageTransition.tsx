@@ -46,17 +46,13 @@ const PageTransition = () => {
             from: "start",
           },
         })
-        .to(
-          ".page-transition__text .splitted-char ",
-          {
-            y: "0%",
-            ease: easeEntrance,
-            stagger: {
-              each: 0.035,
-            },
+        .to(".page-transition__text .splitted-char ", {
+          y: "0%",
+          ease: easeEntrance,
+          stagger: {
+            each: 0.035,
           },
-          "-=0.25",
-        )
+        })
         .to(
           ".page-transition__text .splitted-char ",
           {
@@ -80,7 +76,11 @@ const PageTransition = () => {
             },
           },
           "-=0.25",
-        );
+        )
+        .to(pageTransitionRef.current, {
+          visibility: "hidden",
+          duration: 0.1,
+        });
     },
     { scope: pageTransitionRef },
   );

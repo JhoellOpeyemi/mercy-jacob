@@ -48,24 +48,23 @@ const Header = () => {
 
     setTimeout(() => {
       navigate(path); // Navigate after the delay
-    }, 2000);
+    }, 1800);
   };
 
   useEffect(() => {
-    const getCurrentTime = (): string => {
+    const updateCurrentTime = (): void => {
       const now = new Date();
       const hours = String(now.getHours()).padStart(2, "0");
       const minutes = String(now.getMinutes()).padStart(2, "0");
       const time = `${hours}:${minutes}`;
       setCurrentTime(time);
-      return time;
     };
 
-    getCurrentTime();
+    // Update immediately
+    updateCurrentTime();
 
-    const interval = setInterval(() => {
-      setCurrentTime(getCurrentTime());
-    }, 60000);
+    // Check every second if the minute has changed
+    const interval = setInterval(updateCurrentTime, 1000);
 
     return () => clearInterval(interval);
   }, []);

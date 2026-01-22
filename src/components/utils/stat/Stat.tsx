@@ -27,8 +27,8 @@ const Stat = ({ number, firstText, secondText }: StatProps) => {
         .timeline({
           scrollTrigger: {
             trigger: statsRef.current,
-            start: "clamp(top 85%)",
-            end: "clamp(bottom 70%)",
+            start: "clamp(top 90%)",
+            end: "clamp(bottom 75%)",
             scrub: true,
           },
         })

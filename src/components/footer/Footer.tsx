@@ -83,7 +83,8 @@ const Footer = () => {
           <div className="footer__brand-copyright">
             <div className="footer__brand">
               <h2 className="footer__brand-name playfair-display">
-                Mercy Jacob
+                <span className="footer__brand-text">Mercy Jacob</span>
+                <span className="footer__brand-text">Mercy Jacob</span>
               </h2>
             </div>
             <p className="footer__copyright">

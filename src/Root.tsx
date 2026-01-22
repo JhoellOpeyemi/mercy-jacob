@@ -6,6 +6,7 @@ import { useLoading } from "@/hooks/useLoading";
 import Header from "@/components/header/Header";
 import SmoothScroll from "@/components/utils/SmoothScroll";
 import Footer from "@/components/footer/Footer";
+import ScrollToTop from "@/components/utils/ScrollToTop";
 import PageTransition from "./components/utils/pageTransition/PageTransition";
 
 // styles import
@@ -31,6 +32,7 @@ const Root = () => {
 
   return (
     <SmoothScroll>
+      <ScrollToTop />
       <div className="root">
         <Header />
 

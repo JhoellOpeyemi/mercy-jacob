@@ -1,7 +1,7 @@
 .home-about__content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .home-about__heading {
@@ -35,7 +35,7 @@
     gap: 1.5rem;
   }
 
-  .home-about .ui-button {
+  .home-about .ui-button__container {
     align-self: flex-end;
   }
 }
@@ -78,10 +78,10 @@
   }
 
   .home-about__numbers-container .stat span:first-child {
-    font-size: 1.5rem
+    font-size: 1.5rem;
   }
 
-  .home-about .ui-button {
+  .home-about .ui-button__container {
     order: 4;
     margin: 0 auto;
   }

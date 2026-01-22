@@ -42,8 +42,8 @@
   font-size: 0.9rem;
 }
 
-.footer-brand {
-  overflow: hidden;
+.footer__brand-copyright {
+  overflow-x: hidden;
 }
 
 .footer__brand-name {
@@ -55,6 +55,21 @@
   line-height: 1;
   pointer-events: none;
   user-select: none;
+  display: flex;
+}
+
+.footer__brand-text {
+  animation: scroll-horizontal 20s linear infinite;
+  padding-right: 3rem;
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .footer__copyright {
@@ -67,56 +82,56 @@
 
 /* min width 769px */
 @media screen and (min-width: 48.0625rem) {
-    .footer {
-        padding: 6rem 0 1rem;
-    }
+  .footer {
+    padding: 6rem 0 1rem;
+  }
 
-    .footer__content-inner {
-        margin-bottom: 3rem;
-    }
+  .footer__content-inner {
+    margin-bottom: 3rem;
+  }
 
-    .footer__content-inner.flex-between {
-        align-items: flex-start;
-    }
+  .footer__content-inner.flex-between {
+    align-items: flex-start;
+  }
 
-    .footer__content-image-container {
-        width: 15rem;
-        aspect-ratio: 1 / 1;
-    }
+  .footer__content-image-container {
+    width: 15rem;
+    aspect-ratio: 1 / 1;
+  }
 
-    .footer__desktop-socials {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
+  .footer__desktop-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 
-    .footer__social-link {
-        opacity: 1;
-        font-size: 1rem;
-        line-height: 1;
-    }
+  .footer__social-link {
+    opacity: 1;
+    font-size: 1rem;
+    line-height: 1;
+  }
 
-    .footer__mobile-socials {
-        display: none;
-    }
+  .footer__mobile-socials {
+    display: none;
+  }
 
-    .footer__content-links {
-        gap: 2rem;
-        line-height: 1;
-        align-items: flex-start;
-        font-size: 1rem;
-    }
+  .footer__content-links {
+    gap: 2rem;
+    line-height: 1;
+    align-items: flex-start;
+    font-size: 1rem;
+  }
 
-    .footer__content-link-item {
-        opacity: 0.8;
-    }
+  .footer__content-link-item {
+    opacity: 0.8;
+  }
 
-    .footer__brand-name {
-        text-transform: uppercase;
-    }
+  .footer__brand-name {
+    text-transform: uppercase;
+  }
 
-    .footer__copyright {
-        font-size: 1rem;
-        margin-top: 1.5rem;
-    }
+  .footer__copyright {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
 }
