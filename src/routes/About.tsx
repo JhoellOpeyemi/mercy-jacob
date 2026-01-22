@@ -1,7 +1,7 @@
 // components import
-import AboutContent from '@/components/about/about-content/AboutContent'
-import Career from '@/components/about/career/Career'
-import Gallery from '@/components/about/gallery/Gallery'
+import AboutContent from "@/components/about/about-content/AboutContent";
+import Career from "@/components/about/career/Career";
+import Gallery from "@/components/about/gallery/Gallery";
 
 const About = () => {
   return (

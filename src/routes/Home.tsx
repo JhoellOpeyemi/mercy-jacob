@@ -1,3 +1,5 @@
+// hooks import
+import { useLoading } from "@/hooks/useLoading";
 // components import
 import Hero from "@/components/home/hero/Hero";
 import Loader from "@/components/home/loader/Loader";
@@ -8,15 +10,19 @@ import MessageIcon from "@/components/ui/message-icon/MessageIcon";
 import Testimonials from "@/components/home/testimonials/Testimonials";
 
 const Home = () => {
+  const { loading } = useLoading();
+
   return (
     <div className="home page-container">
-      <Loader />
-      <Hero />
-      <MessageIcon />
-      <About />
-      <Brands />
-      <Services />
-      <Testimonials />
+      {loading && <Loader />}
+      <>
+        <Hero />
+        <MessageIcon />
+        <About />
+        <Brands />
+        <Services />
+        <Testimonials />
+      </>
     </div>
   );
 };

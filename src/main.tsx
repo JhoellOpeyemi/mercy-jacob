@@ -9,6 +9,7 @@ import About from "@/routes/About.tsx";
 import Services from "@/routes/Services.tsx";
 import Career from "@/routes/Career.tsx";
 import Process from "@/routes/Process";
+import { LoadingProvider } from "@/context/LoadingProvider";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
+    <LoadingProvider>
+      <RouterProvider router={router} />
+    </LoadingProvider>
+  </StrictMode>,
 );

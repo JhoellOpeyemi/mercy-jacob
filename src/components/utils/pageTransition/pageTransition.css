@@ -1,0 +1,46 @@
+.page-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  z-index: 10;
+  pointer-events: none;
+  user-select: none;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.page-transition__blocks {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.page-transition__blocks div {
+  flex: 1;
+  background-color: var(--color-dark-bg);
+  will-change: transform;
+}
+
+.page-transition__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-bg);
+  font-size: 2rem;
+}
+
+.page-transition__text .splitted-text__container {
+  overflow: hidden;
+  display: block;
+}
+
+.page-transition__text .splitted-char {
+  transform: translateY(100%);
+  will-change: transform;
+}

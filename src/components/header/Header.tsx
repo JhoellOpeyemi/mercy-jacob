@@ -2,6 +2,8 @@
 import { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { useLoading } from "@/hooks/useLoading";
+import { useNavigate } from "react-router";
 // components import
 import Nav from "./nav/Nav";
 // styles import
@@ -11,11 +13,14 @@ import { headerAnimation } from "./animation";
 gsap.registerPlugin(useGSAP);
 
 const Header = () => {
-  const headerRef = useRef<HTMLElement>(null);
+  const navigate = useNavigate();
+  const { setPageTransition, setPage } = useLoading();
 
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
   const [numberOfClicks, setNumberOfClicks] = useState<number>(0);
   const [currentTime, setCurrentTime] = useState<string>("");
+
+  const headerRef = useRef<HTMLElement>(null);
 
   const handleNav = () => {
     const newClickCount = numberOfClicks + 1;
@@ -29,9 +34,21 @@ const Header = () => {
     }
   };
 
-  const closeNav = () => {
+  const closeNav = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    path: string,
+    page: string,
+  ) => {
     setIsNavOpen(false);
     setNumberOfClicks(0);
+    setPageTransition(true);
+    setPage(page);
+
+    e.preventDefault(); // Prevent immediate navigation
+
+    setTimeout(() => {
+      navigate(path); // Navigate after the delay
+    }, 2000);
   };
 
   useEffect(() => {

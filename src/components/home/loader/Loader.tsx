@@ -2,14 +2,16 @@
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { useLoading } from "@/hooks/useLoading";
 // utils import
-import { easeEntrance } from "@/utils";
+import { easeExit } from "@/utils";
 // styles import
 import "./loader.css";
 
 gsap.registerPlugin(useGSAP);
 
 const Loader = () => {
+  const { setLoading } = useLoading();
   const loaderRef = useRef<HTMLDivElement>(null);
   const loaderTlRef = useRef<gsap.core.Timeline | null>(null);
 
@@ -29,21 +31,50 @@ const Loader = () => {
       path2.style.strokeDashoffset = path2Length.toString();
 
       loaderTlRef.current = gsap
-        .timeline({ repeat: -1, repeatDelay: 0.5 })
-        .to(path2, {
+        .timeline({ onComplete: () => setLoading(false) })
+        .to([path2, path1], {
           strokeDashoffset: 0,
-          duration: 1.5,
-          ease: easeEntrance,
+          duration: 1,
+          ease: easeExit,
+          repeat: 3,
+          repeatDelay: 0.2,
+        })
+        .to(
+          ".loader-text",
+          {
+            opacity: 0.7,
+          },
+          "<+0.5",
+        )
+        .to(path2, {
+          strokeDashoffset: path2Length.toString(),
+          duration: 1,
+          ease: easeExit,
         })
         .to(
           path1,
           {
-            strokeDashoffset: 0,
-            duration: 1.5,
-            ease: easeEntrance,
+            strokeDashoffset: path1Length.toString(),
+            duration: 1,
+            ease: easeExit,
           },
           "<",
-        );
+        )
+        .to(
+          ".loader-text",
+          {
+            opacity: 0,
+          },
+          "<",
+        )
+        .to(".loader-row div ", {
+          x: "100%",
+          ease: easeExit,
+          stagger: {
+            each: 0.075,
+            from: "start",
+          },
+        });
     },
     { scope: loaderRef },
   );
@@ -68,6 +99,19 @@ const Loader = () => {
           strokeWidth="2"
         />
       </svg>
+
+      <p className="loader-text">Loading...</p>
+
+      <div className="loader-row loader-row__1">
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+      </div>
     </div>
   );
 };

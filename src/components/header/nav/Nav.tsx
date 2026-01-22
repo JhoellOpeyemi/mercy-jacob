@@ -19,7 +19,11 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 interface NavProps {
   isNavOpen: boolean;
   numberOfClicks: number;
-  closeNav: () => void;
+  closeNav: (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    path: string,
+    page: string,
+  ) => void;
 }
 
 const Nav = ({ isNavOpen, closeNav, numberOfClicks }: NavProps) => {
@@ -55,7 +59,7 @@ const Nav = ({ isNavOpen, closeNav, numberOfClicks }: NavProps) => {
                   <NavLink
                     to={link.path}
                     className="nav__link"
-                    onClick={closeNav}
+                    onClick={(e) => closeNav(e, link.path, link.label)}
                   >
                     <Text texts={link.label} />
                   </NavLink>
