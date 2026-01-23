@@ -19,7 +19,7 @@ const Hero = () => {
         </div>
 
         <h1 className="hero__title">
-          <Word words="I'm Mercy Jacob" />
+          <Word words="Mercy Jacob" />
         </h1>
 
         <div className="hero__subtitle-container flex-column">

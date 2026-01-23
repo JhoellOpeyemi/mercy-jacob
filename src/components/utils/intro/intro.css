@@ -18,12 +18,12 @@
 
 /* min width 769px */
 @media screen and (min-width: 48.0625rem) {
-    .intro-section {
-        padding: 0 0 2rem;
-    }
+  .intro-section {
+    padding: 0 0 2rem;
+  }
 
-    .intro-content {
-        margin-top: 3rem;
-        flex-direction: row;
-    }
+  .intro-content {
+    margin-top: 3rem;
+    flex-direction: row;
+  }
 }

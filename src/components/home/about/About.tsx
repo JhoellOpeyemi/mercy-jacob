@@ -4,12 +4,15 @@ import Stat from "@/components/utils/stat/Stat";
 import Text from "@/components/utils/text/Text";
 // styled import
 import "./about.css";
+import Word from "@/components/utils/word/Word";
 
 const About = () => {
   return (
     <section className="home-about section-container">
       <div className="home-about-container">
-        <h2 className="home-about__heading section-heading">About</h2>
+        <h2 className="home-about__heading section-heading">
+          <Word words="About" />
+        </h2>
 
         <div className="home-about__content">
           <p className="home-about__text">

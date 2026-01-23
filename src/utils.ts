@@ -16,7 +16,6 @@ export const brandsList: string[] = [
   "Brand 6",
   "Brand 7",
   "Brand 8",
-  "Brand 9",
 ];
 
 export const servicesList = [
@@ -160,4 +159,22 @@ export const splitTextByCharacters = (text: string): string[][] => {
 
 export const splitTextByWords = (text: string): string[] => {
   return text.split(" ").map((word) => (word === " " ? "&nbsp;" : word));
+};
+
+export const getContactPosition = (): number | null => {
+  const contactElement = document.getElementById("contact");
+
+  if (!contactElement) {
+    return null;
+  }
+
+  return contactElement.getBoundingClientRect().top + window.scrollY;
+};
+
+export const scrollToContact = (): void => {
+  const contactPosition = getContactPosition();
+  window.scrollTo({
+    top: contactPosition ?? 0,
+    behavior: "smooth",
+  });
 };

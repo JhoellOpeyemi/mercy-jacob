@@ -9,10 +9,8 @@ import Word from "@/components/utils/word/Word";
 const Services = () => {
   return (
     <section className="home-services section-container">
-      <h2 className="home-services__heading section-heading flex-between">
-        <span>What &nbsp;</span>
-        <span>I &nbsp;</span>
-        <span>Do</span>
+      <h2 className="home-services__heading section-heading">
+        <Word words="What I Do" />
       </h2>
 
       <ul className="home-services__list">

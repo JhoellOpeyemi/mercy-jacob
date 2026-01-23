@@ -1,6 +1,7 @@
 // components import
 import QuoteIcon from "@/components/ui/quote-icon/QuoteIcon";
 import Text from "@/components/utils/text/Text";
+import Word from "@/components/utils/word/Word";
 // utils import
 import { testimonialsList } from "@/utils";
 // styles import
@@ -12,8 +13,12 @@ const Testimonials = () => {
       <QuoteIcon />
 
       <h2 className="home-testimonials__heading section-heading">
-        <span>What my</span>
-        <span>Clients said:</span>
+        <span>
+          <Word words="What My" />
+        </span>
+        <span>
+          <Word words="Clients Said:" />
+        </span>
       </h2>
 
       <ul className="home-testimonials__list">

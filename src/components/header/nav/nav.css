@@ -38,14 +38,21 @@
 }
 
 .nav__link {
-  text-transform: uppercase;
   font-size: var(--font-xl-text);
   line-height: 1.1;
   opacity: 1;
 }
 
+button.nav__link {
+  background: none;
+  border: none;
+  color: inherit;
+}
+
 .nav__link.active {
   color: var(--color-light);
+  pointer-events: none;
+  user-select: none;
 }
 
 .nav__socials-list {

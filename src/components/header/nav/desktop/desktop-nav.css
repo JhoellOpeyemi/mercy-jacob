@@ -5,8 +5,13 @@
 .desktop-nav__link {
   position: relative;
   font-size: 1.15rem;
-  /* font-weight: 500; */
   transition: color 0.35s ease;
+}
+
+button.desktop-nav__link {
+  background: none;
+  border: none;
+  color: inherit;
 }
 
 .desktop-nav__link::before {

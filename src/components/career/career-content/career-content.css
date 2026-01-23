@@ -1,26 +1,25 @@
 .career-content__section .intro-image {
-    width: 85%;
-    height: 40vh;
-    margin: 0 auto;
+  width: 90%;
+  height: 40vh;
+  margin: 0 auto;
 }
 
 /* min width 769px */
 @media screen and (min-width: 48.0625rem) {
-    .career-content__section .intro-content {
-        flex-direction: row-reverse;
-        align-items: flex-end;
-        justify-content: space-between;
-        margin-top: 1rem;
-    }
+  .career-content__section .intro-content {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
 
-    .career-content__section .intro-image {
-        width: 50%;
-        aspect-ratio: 1 / 0.6; 
-        margin: 0 0 4rem;
-        height: unset;
-    }
+  .career-content__section .intro-image {
+    width: 50%;
+    aspect-ratio: 1 / 0.6;
+    height: unset;
+  }
 
-    .career-content__section .intro-text {
-        width: 40%;
-    }
+  .career-content__section .intro-text {
+    width: 40%;
+  }
 }

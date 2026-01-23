@@ -1,19 +1,22 @@
 /* min width 769px */
 @media screen and (min-width: 48.0625rem) {
   .process__hero .intro-content {
-    align-items: flex-end;
     justify-content: space-between;
   }
 
   .process__hero .intro-image {
-    width: 60%;
-    aspect-ratio: 1 / 1.25;
+    width: 55%;
+    aspect-ratio: 1 / 0.7;
     height: unset;
     max-height: 31.25rem;
   }
 
+  .process__hero .page-heading {
+    text-align: right;
+  }
+
   .process__hero .intro-text {
     width: 35%;
-    margin-bottom: 7rem;
+    margin-top: 10rem;
   }
 }

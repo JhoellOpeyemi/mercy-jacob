@@ -4,8 +4,8 @@
 }
 
 .contact__heading {
-  font-size: var(--font-md-text);
-  font-weight: 700;
+  font-size: var(--font-l-text);
+  font-weight: 500;
 }
 
 .contact__email-link {
@@ -15,18 +15,26 @@
 
 /* min-width 651px */
 @media screen and (min-width: 40.6875rem) {
-    .contact__intro {
-        gap: 3rem;
-        text-align: center;
-    }
+  .contact__intro {
+    gap: 3rem;
+    text-align: center;
+  }
 
-    .contact__heading {
-        text-transform: uppercase;
-    }
+  .contact__heading {
+    text-transform: uppercase;
+  }
 
-    .contact__description {
-        font-size: 1.25rem;
-        width: 28.125rem;
-        margin: 0 auto;
-    }
+  .contact__description {
+    font-size: 1.25rem;
+    width: 28.125rem;
+    margin: 0 auto;
+  }
+}
+
+/* min-width 1025px */
+@media screen and (min-width: 64.0625rem) {
+  .contact__heading {
+    font-size: 6rem;
+    font-weight: 600;
+  }
 }

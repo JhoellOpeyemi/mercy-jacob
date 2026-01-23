@@ -27,7 +27,7 @@
 }
 
 .hero__subtitle {
-  font-size: clamp(1.25rem, 2vw, 2rem);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
   font-weight: 400;
   color: var(--color-dark-text);
 }
@@ -82,11 +82,29 @@
 /* min width 1025px */
 @media screen and (min-width: 64.0625rem) {
   .hero__media {
-    width: 72%;
+    width: 60%;
+    order: 2;
+    margin: -8.5rem 0 0;
+  }
+
+  .hero__title {
+    font-family: "Playfair Display", serif;
+    font-size: 5rem;
+    width: 40%;
   }
 
   .hero__subtitle-container.flex-column {
-    width: 72%;
+    width: 60%;
     gap: 5rem;
+    margin: 1rem 0 0;
+    line-height: 1;
+  }
+
+  .hero__subtitle-container p {
+    line-height: 1.4;
+  }
+
+  .hero__subtitle-container {
+    order: 2;
   }
 }

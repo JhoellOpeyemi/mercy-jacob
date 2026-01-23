@@ -20,16 +20,16 @@ const Word = ({ words }: WordProps) => {
   useGSAP(
     () => {
       gsap.from(".splitted-word", {
-        y: "110%",
+        y: "100%",
+        opacity: 0,
         ease: "power1.out",
         duration: 0.75,
         stagger: {
           each: 0.1,
         },
-        // delay: 1,
         scrollTrigger: {
           trigger: wordsRef.current,
-          start: "top 85%",
+          start: "top 80%",
         },
       });
     },

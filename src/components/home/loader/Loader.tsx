@@ -31,12 +31,12 @@ const Loader = () => {
       path2.style.strokeDashoffset = path2Length.toString();
 
       loaderTlRef.current = gsap
-        .timeline({ onComplete: () => setLoading(false) })
+        .timeline({ delay: 0.5, onComplete: () => setLoading(false) })
         .to([path2, path1], {
           strokeDashoffset: 0,
           duration: 1,
           ease: easeExit,
-          repeat: 3,
+          repeat: 2,
           repeatDelay: 0.2,
         })
         .to(

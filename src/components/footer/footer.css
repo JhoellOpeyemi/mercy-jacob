@@ -7,9 +7,10 @@
   overflow: hidden;
 }
 
-.footer__content-inner {
+.footer__content-inner.flex-between {
   gap: 2rem;
   margin-bottom: 3.5rem;
+  align-items: flex-start;
 }
 
 .footer__content-image-container {
@@ -53,9 +54,12 @@
   opacity: 0.7;
   white-space: nowrap;
   line-height: 1;
-  pointer-events: none;
   user-select: none;
   display: flex;
+}
+
+.footer__brand-name:hover .footer__brand-text {
+  animation-play-state: paused;
 }
 
 .footer__brand-text {
@@ -88,10 +92,6 @@
 
   .footer__content-inner {
     margin-bottom: 3rem;
-  }
-
-  .footer__content-inner.flex-between {
-    align-items: flex-start;
   }
 
   .footer__content-image-container {

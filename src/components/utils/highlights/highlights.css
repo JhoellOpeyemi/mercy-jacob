@@ -45,37 +45,37 @@
 
 /* min width 769px */
 @media screen and (min-width: 48.0625rem) {
-    .highlights-section__content {
-        width: 100%;
-        gap: 5rem;
-    }
+  .highlights-section__content {
+    width: 100%;
+    gap: 5rem;
+  }
 
-    .highlights-section__year-sidebar {
-        top: 6.5rem;
-        width: 15%;
-    }
+  .highlights-section__year-sidebar {
+    top: 6.5rem;
+    width: 15%;
+  }
 
-    .highlights-section__year {
-        font-size: clamp(1.15rem, 2vw + 0.2rem, 1.5rem);
-    }
+  .highlights-section__year {
+    font-size: clamp(1.15rem, 2vw + 0.2rem, 1.5rem);
+  }
 
-    .highlights-section__-year-group {
-        position: relative;
-        display: flex;
-        align-items: flex-start;
-        gap: 5rem;
-    }
+  .highlights-section__-year-group {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 5rem;
+  }
 
-    .highlights-section__year-heading {
-        position: sticky;
-        display: block;
-        top: 45%;
-        font-weight: 400;
-        font-size: clamp(2rem, 4vw + 0.2rem, 3.5rem);
-        opacity: 0.2;
-    }
+  .highlights-section__year-heading {
+    position: sticky;
+    display: block;
+    top: 45%;
+    font-weight: 400;
+    font-size: clamp(2rem, 4vw + 0.2rem, 3.5rem);
+    opacity: 0.2;
+  }
 
-    .highlights-section__list {
-        margin-top: 4rem;
-    }
+  .highlights-section__list {
+    margin-top: 4rem;
+  }
 }

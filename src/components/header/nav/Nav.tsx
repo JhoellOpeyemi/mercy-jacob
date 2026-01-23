@@ -7,12 +7,12 @@ import { useWindowSize } from "@/hooks/useWindowSize";
 // components import
 import { NavLink } from "react-router";
 import DesktopNav from "./desktop/DesktopNav";
+import Text from "@/components/utils/text/Text";
 // utils import
 import { links } from "@/utils";
 import { createNavTimeline, controlNavTimeline } from "./animation";
 // styles import
 import "./nav.css";
-import Text from "@/components/utils/text/Text";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -20,9 +20,9 @@ interface NavProps {
   isNavOpen: boolean;
   numberOfClicks: number;
   closeNav: (
-    e: React.MouseEvent<HTMLAnchorElement>,
     path: string,
     page: string,
+    e?: React.MouseEvent<HTMLAnchorElement>,
   ) => void;
 }
 
@@ -56,13 +56,22 @@ const Nav = ({ isNavOpen, closeNav, numberOfClicks }: NavProps) => {
             <ul className="nav__list">
               {links.map((link) => (
                 <li key={link.path} className="nav__item">
-                  <NavLink
-                    to={link.path}
-                    className="nav__link"
-                    onClick={(e) => closeNav(e, link.path, link.label)}
-                  >
-                    <Text texts={link.label} />
-                  </NavLink>
+                  {link.path.startsWith("/") ? (
+                    <NavLink
+                      to={link.path}
+                      className="nav__link"
+                      onClick={(e) => closeNav(link.path, link.label, e)}
+                    >
+                      <Text texts={link.label} />
+                    </NavLink>
+                  ) : (
+                    <button
+                      className="nav__link"
+                      onClick={() => closeNav(link.path, link.label)}
+                    >
+                      <Text texts={link.label} />
+                    </button>
+                  )}
                 </li>
               ))}
             </ul>
@@ -88,7 +97,7 @@ const Nav = ({ isNavOpen, closeNav, numberOfClicks }: NavProps) => {
         </nav>
       )}
 
-      {isDesktop && <DesktopNav />}
+      {isDesktop && <DesktopNav closeNav={closeNav} />}
     </>
   );
 };
