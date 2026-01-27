@@ -20,6 +20,7 @@ export const animateMobileBrands = (
     },
   });
 };
+
 export const animateDesktopBrands = (
   brandsRef: React.RefObject<HTMLDivElement | null>,
 ) => {
